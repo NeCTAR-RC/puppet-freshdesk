@@ -1,0 +1,19 @@
+/var/log/freshdesk/pip.log  {  
+ copytruncate  
+ daily  
+ rotate 7  
+ compress  
+ delaycompress 
+ missingok  
+ size 500M  
+}  
+
+/var/log/freshdesk/osid.log  {  
+ copytruncate  
+ daily  
+ rotate 7  
+ compress  
+ delaycompress 
+ missingok  
+ size 500M  
+} 
