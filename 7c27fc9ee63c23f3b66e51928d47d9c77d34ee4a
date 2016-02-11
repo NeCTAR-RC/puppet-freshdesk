@@ -1,0 +1,320 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bad4c104_166c219c",
+        "filename": "files/apache/freshdesk.conf",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-02-11T23:49:29Z",
+      "side": 1,
+      "message": "whitespace",
+      "revId": "7c27fc9ee63c23f3b66e51928d47d9c77d34ee4a",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_3669258c",
+        "filename": "files/apache/index.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-02-11T23:49:29Z",
+      "side": 1,
+      "message": "missing / in end tag",
+      "range": {
+        "startLine": 14,
+        "startChar": 40,
+        "endLine": 14,
+        "endChar": 44
+      },
+      "revId": "7c27fc9ee63c23f3b66e51928d47d9c77d34ee4a",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_760acdd3",
+        "filename": "puppet-module/freshdesk/manifests/init.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-02-11T23:49:29Z",
+      "side": 1,
+      "message": "use apache module for this",
+      "range": {
+        "startLine": 36,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 6
+      },
+      "revId": "7c27fc9ee63c23f3b66e51928d47d9c77d34ee4a",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_960f51e1",
+        "filename": "puppet-module/freshdesk/manifests/init.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-02-11T23:49:29Z",
+      "side": 1,
+      "message": "this isn\u0027t a good name for a resource",
+      "range": {
+        "startLine": 41,
+        "startChar": 9,
+        "endLine": 41,
+        "endChar": 35
+      },
+      "revId": "7c27fc9ee63c23f3b66e51928d47d9c77d34ee4a",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_f6f5fdcb",
+        "filename": "puppet-module/freshdesk/manifests/init.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-02-11T23:49:29Z",
+      "side": 1,
+      "message": "all these sources are wrong they should be\n\npuppet:///modules/freshdesk/XXX",
+      "range": {
+        "startLine": 46,
+        "startChar": 18,
+        "endLine": 46,
+        "endChar": 59
+      },
+      "revId": "7c27fc9ee63c23f3b66e51928d47d9c77d34ee4a",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_b61455f6",
+        "filename": "puppet-module/freshdesk/manifests/init.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-02-11T23:49:29Z",
+      "side": 1,
+      "message": "use apache module for this",
+      "range": {
+        "startLine": 51,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 6
+      },
+      "revId": "7c27fc9ee63c23f3b66e51928d47d9c77d34ee4a",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_160341b9",
+        "filename": "puppet-module/freshdesk/manifests/init.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-02-11T23:49:29Z",
+      "side": 1,
+      "message": "created by package?",
+      "range": {
+        "startLine": 62,
+        "startChar": 0,
+        "endLine": 68,
+        "endChar": 7
+      },
+      "revId": "7c27fc9ee63c23f3b66e51928d47d9c77d34ee4a",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_d6f8f9c6",
+        "filename": "puppet-module/freshdesk/manifests/init.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-02-11T23:49:29Z",
+      "side": 1,
+      "message": "should be done via debian packages",
+      "range": {
+        "startLine": 69,
+        "startChar": 0,
+        "endLine": 79,
+        "endChar": 6
+      },
+      "revId": "7c27fc9ee63c23f3b66e51928d47d9c77d34ee4a",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_360045aa",
+        "filename": "puppet-module/freshdesk/manifests/init.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-02-11T23:49:29Z",
+      "side": 1,
+      "message": "created by package",
+      "range": {
+        "startLine": 81,
+        "startChar": 0,
+        "endLine": 101,
+        "endChar": 6
+      },
+      "revId": "7c27fc9ee63c23f3b66e51928d47d9c77d34ee4a",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_562ce94a",
+        "filename": "puppet-module/freshdesk/manifests/init.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-02-11T23:49:29Z",
+      "side": 1,
+      "message": "install by deb package, no pip",
+      "range": {
+        "startLine": 111,
+        "startChar": 1,
+        "endLine": 128,
+        "endChar": 6
+      },
+      "revId": "7c27fc9ee63c23f3b66e51928d47d9c77d34ee4a",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_7631eda1",
+        "filename": "puppet-module/freshdesk/manifests/init.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-02-11T23:49:29Z",
+      "side": 1,
+      "message": "bad",
+      "range": {
+        "startLine": 129,
+        "startChar": 0,
+        "endLine": 135,
+        "endChar": 6
+      },
+      "revId": "7c27fc9ee63c23f3b66e51928d47d9c77d34ee4a",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_d61f1908",
+        "filename": "puppet-module/freshdesk/manifests/init.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-02-11T23:49:29Z",
+      "side": 1,
+      "message": "use package",
+      "range": {
+        "startLine": 136,
+        "startChar": 0,
+        "endLine": 140,
+        "endChar": 7
+      },
+      "revId": "7c27fc9ee63c23f3b66e51928d47d9c77d34ee4a",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_b62b752f",
+        "filename": "puppet-module/freshdesk/manifests/init.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-02-11T23:49:29Z",
+      "side": 1,
+      "message": "not sure why bash profile needs to change?",
+      "range": {
+        "startLine": 141,
+        "startChar": 0,
+        "endLine": 145,
+        "endChar": 6
+      },
+      "revId": "7c27fc9ee63c23f3b66e51928d47d9c77d34ee4a",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_96267167",
+        "filename": "puppet-module/freshdesk/manifests/init.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-02-11T23:49:29Z",
+      "side": 1,
+      "message": "bad, use service resource",
+      "range": {
+        "startLine": 146,
+        "startChar": 0,
+        "endLine": 150,
+        "endChar": 3
+      },
+      "revId": "7c27fc9ee63c23f3b66e51928d47d9c77d34ee4a",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    }
+  ]
+}
