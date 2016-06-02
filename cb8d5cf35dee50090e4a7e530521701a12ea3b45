@@ -22,6 +22,30 @@
       "revId": "cb8d5cf35dee50090e4a7e530521701a12ea3b45",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_29599cfe",
+        "filename": "manifests/pip.pp",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1000105
+      },
+      "writtenOn": "2016-06-02T02:45:43Z",
+      "side": 1,
+      "message": "ah, yep, I\u0027ve removed it.\nPuppet says what this does is\nplatform specific, and for Xenial it depends on if there are any systemd presets, and if there are none, defaults to enabled if package is installed.",
+      "parentUuid": "bad4c104_abdbe419",
+      "range": {
+        "startLine": 52,
+        "startChar": 4,
+        "endLine": 52,
+        "endChar": 19
+      },
+      "revId": "cb8d5cf35dee50090e4a7e530521701a12ea3b45",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
     }
   ]
 }
