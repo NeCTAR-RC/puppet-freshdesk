@@ -7,7 +7,7 @@ class freshdesk::dev {
 
   $pip_port = $::freshdesk::pip::port
 
-  ensure_packages(['apache2','ssl-cert'])
+  ensure_packages(['ssl-cert'])
 
   file {'/opt/nectar/wildcard.crt':
     ensure => link,
@@ -19,28 +19,7 @@ class freshdesk::dev {
   }
   file {'/etc/apache2/conf-available/freshdesk.conf':
     content => template('freshdesk/dev/apache-rproxy.conf.erb'),
-  }
-
-  #enable things
-  file {'/etc/apache2/mods-enabled/ssl.conf':
-    ensure => link,
-    target => '../mods-available/ssl.conf'
-  }
-  file {'/etc/apache2/mods-enabled/ssl.load':
-    ensure => link,
-    target => '../mods-available/ssl.load'
-  }
-  file {'/etc/apache2/mods-enabled/proxy.load':
-    ensure => link,
-    target => '../mods-available/proxy.load'
-  }
-  file {'/etc/apache2/mods-enabled/proxy_http.load':
-    ensure => link,
-    target => '../mods-available/proxy_http.load'
-  }
-  file {'/etc/apache2/mods-enabled/proxy.conf':
-    ensure => link,
-    target => '../mods-available/proxy.conf'
+    ensure  => absent,
   }
 
 }
