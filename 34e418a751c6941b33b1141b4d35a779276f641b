@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "bad4c104_c702d06e",
+        "filename": "manifests/apache.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000105
+      },
+      "writtenOn": "2016-06-17T06:23:39Z",
+      "side": 1,
+      "message": "was failing to look up osid port without it.",
+      "parentUuid": "bad4c104_07c67849",
+      "range": {
+        "startLine": 44,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 26
+      },
+      "revId": "34e418a751c6941b33b1141b4d35a779276f641b",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bad4c104_e7ca744e",
         "filename": "manifests/apache.pp",
         "patchSetId": 2
@@ -36,6 +60,30 @@
       "writtenOn": "2016-06-17T06:05:29Z",
       "side": 1,
       "message": "you could just put the full path here and then you wouldn\u0027t need to specify it above too",
+      "range": {
+        "startLine": 71,
+        "startChar": 35,
+        "endLine": 71,
+        "endChar": 46
+      },
+      "revId": "34e418a751c6941b33b1141b4d35a779276f641b",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_e7f8b47e",
+        "filename": "manifests/apache.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1000105
+      },
+      "writtenOn": "2016-06-17T06:23:39Z",
+      "side": 1,
+      "message": "you mean zap this line:\n   \"$osid_port \u003d $::freshdesk::osid::port\"\nthought it was clearer this way, but happy to change it.",
+      "parentUuid": "bad4c104_e7ca744e",
       "range": {
         "startLine": 71,
         "startChar": 35,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "bad4c104_872fe8f5",
+        "filename": "manifests/dev.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000105
+      },
+      "writtenOn": "2016-06-17T06:23:39Z",
+      "side": 1,
+      "message": "thought maybe keep it around for the self-signed cert, but nope, I will zap it.",
+      "parentUuid": "bad4c104_27c53c3c",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 64
+      },
+      "revId": "34e418a751c6941b33b1141b4d35a779276f641b",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bad4c104_67de6413",
         "filename": "manifests/osid.pp",
         "patchSetId": 2
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "bad4c104_073bd838",
+        "filename": "manifests/osid.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1000105
+      },
+      "writtenOn": "2016-06-17T06:23:39Z",
+      "side": 1,
+      "message": "actually I think sails uses default loglevel of \u0027info\u0027 (which doesn\u0027t provide much info), so I will change it to that.",
+      "parentUuid": "bad4c104_67de6413",
+      "range": {
+        "startLine": 51,
+        "startChar": 14,
+        "endLine": 51,
+        "endChar": 21
+      },
+      "revId": "34e418a751c6941b33b1141b4d35a779276f641b",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bad4c104_47c0802a",
         "filename": "manifests/osid.pp",
         "patchSetId": 2
@@ -105,6 +201,30 @@
       "writtenOn": "2016-06-17T06:05:29Z",
       "side": 1,
       "message": "maybe this should be called nova_binary",
+      "range": {
+        "startLine": 57,
+        "startChar": 3,
+        "endLine": 57,
+        "endChar": 14
+      },
+      "revId": "34e418a751c6941b33b1141b4d35a779276f641b",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_2721bcfb",
+        "filename": "manifests/osid.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1000105
+      },
+      "writtenOn": "2016-06-17T06:23:39Z",
+      "side": 1,
+      "message": "ok will change.",
+      "parentUuid": "bad4c104_47c0802a",
       "range": {
         "startLine": 57,
         "startChar": 3,
