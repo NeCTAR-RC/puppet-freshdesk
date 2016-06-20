@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bad4c104_27e61cb5",
+        "filename": "manifests/apache.pp",
+        "patchSetId": 3
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-06-20T00:34:12Z",
+      "side": 1,
+      "message": "don\u0027t think this is needed?",
+      "range": {
+        "startLine": 47,
+        "startChar": 2,
+        "endLine": 47,
+        "endChar": 31
+      },
+      "revId": "b72785dca9ce9e1b88bd3b6aa84a33561efb0c57",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    }
+  ]
+}
