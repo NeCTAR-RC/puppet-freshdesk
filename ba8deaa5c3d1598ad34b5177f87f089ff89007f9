@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bad4c104_52c03c2a",
+        "filename": "manifests/apache.pp",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2016-06-20T06:19:28Z",
+      "side": 1,
+      "message": "just a nitpick, but maybe change to server_name for consistency with all other variable names?",
+      "range": {
+        "startLine": 31,
+        "startChar": 3,
+        "endLine": 31,
+        "endChar": 13
+      },
+      "revId": "ba8deaa5c3d1598ad34b5177f87f089ff89007f9",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_d2b44cd3",
+        "filename": "manifests/apache.pp",
+        "patchSetId": 4
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2016-06-20T06:19:28Z",
+      "side": 1,
+      "message": "too many ws",
+      "range": {
+        "startLine": 34,
+        "startChar": 16,
+        "endLine": 34,
+        "endChar": 22
+      },
+      "revId": "ba8deaa5c3d1598ad34b5177f87f089ff89007f9",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_72de2013",
+        "filename": "manifests/osid.pp",
+        "patchSetId": 4
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2016-06-20T06:19:28Z",
+      "side": 1,
+      "message": "not lined up like the other class",
+      "range": {
+        "startLine": 43,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 24
+      },
+      "revId": "ba8deaa5c3d1598ad34b5177f87f089ff89007f9",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    }
+  ]
+}
