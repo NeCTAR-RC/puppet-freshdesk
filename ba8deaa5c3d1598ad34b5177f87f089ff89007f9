@@ -48,6 +48,29 @@
     },
     {
       "key": {
+        "uuid": "bad4c104_324ad8c5",
+        "filename": "manifests/osid.pp",
+        "patchSetId": 4
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1000104
+      },
+      "writtenOn": "2016-06-20T06:35:00Z",
+      "side": 1,
+      "message": "Doesn\u0027t match defaults?",
+      "range": {
+        "startLine": 38,
+        "startChar": 0,
+        "endLine": 38,
+        "endChar": 70
+      },
+      "revId": "ba8deaa5c3d1598ad34b5177f87f089ff89007f9",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bad4c104_72de2013",
         "filename": "manifests/osid.pp",
         "patchSetId": 4
