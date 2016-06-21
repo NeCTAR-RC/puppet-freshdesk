@@ -45,6 +45,30 @@
       "revId": "272086dcb6209f033f0166837afbfc8386736100",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_4d72614a",
+        "filename": "manifests/osid.pp",
+        "patchSetId": 6
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1000105
+      },
+      "writtenOn": "2016-06-21T04:09:31Z",
+      "side": 1,
+      "message": "good catch.",
+      "parentUuid": "bad4c104_6da2c5af",
+      "range": {
+        "startLine": 53,
+        "startChar": 37,
+        "endLine": 53,
+        "endChar": 42
+      },
+      "revId": "272086dcb6209f033f0166837afbfc8386736100",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
     }
   ]
 }
