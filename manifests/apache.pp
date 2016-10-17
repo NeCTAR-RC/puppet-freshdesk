@@ -33,7 +33,7 @@ class freshdesk::apache (
   $bind_host     = undef,
   $service_name  = 'freshdesk',
   $ssl           = true,
-  $ssl_cert      = $::ssl_cert_path,
+  $ssl_cert      = $::ssl_certcombined_path,
   $ssl_key       = $::ssl_key_path,
   $ssl_chain     = undef,
   $ssl_ca        = undef,
