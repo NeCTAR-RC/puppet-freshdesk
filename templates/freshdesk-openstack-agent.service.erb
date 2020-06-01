@@ -1,0 +1,19 @@
+[Unit]
+Description=freshdesk-openstack-agent
+After=ntp.service
+
+[Service]
+User=<%= @user %>
+Group=<%= @group %>
+Type=simple
+WorkingDirectory=<%= @base_dir %>
+PermissionsStartOnly=true
+ExecStartPre=/bin/mkdir -p /var/lock/nectar-freshdesk /var/log/nectar-freshdesk /var/lib/nectar-freshdesk
+ExecStartPre=/bin/chown <%= @user %>:<%= @group %> /var/lock/nectar-freshdesk /var/log/nectar-freshdesk /var/lib/nectar-freshdesk
+ExecStart=<%= @venv_dir %>/bin/freshdesk-openstack-agent
+Restart=on-failure
+LimitNOFILE=65535
+TimeoutStopSec=15
+
+[Install]
+WantedBy=multi-user.target
