@@ -15,6 +15,7 @@ class freshdesk::agent (
   $enabled                = true,
 ) {
 
+  include ::freshdesk
   include ::freshdesk::deps
   include ::systemd
 
@@ -34,6 +35,7 @@ class freshdesk::agent (
   file { '/etc/systemd/system/freshdesk-openstack-agent.service':
     ensure  => present,
     content => template('freshdesk/freshdesk-openstack-agent.service.erb'),
+    require => Python::Pip['nectar-freshdesk'],
     notify  => Exec['systemctl-daemon-reload']
   }
 

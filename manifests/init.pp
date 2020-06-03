@@ -256,6 +256,11 @@ class freshdesk (
   include ::freshdesk::agent
   include ::freshdesk::apache
 
+  ensure_packages([ 'git', 'python3-flask', 'python3-freshdesk', 'python3-oslo.messaging',
+                    'python3-oslo.config',  'python3-oslo.context','python3-oslo.middleware',
+                    'python3-oslo.log', 'python3-jwt', 'python3-keystoneauth1',
+                    'python3-keystoneclient', 'python3-novaclient', 'python3-glanceclient'])
+
   group { $group:
     ensure => present,
     system => true,
@@ -266,15 +271,15 @@ class freshdesk (
     home       => $base_dir,
     managehome => true,
   }
-  -> file { ['/etc/nectar-freshdesk',
-          '/opt/nectar-freshdesk' ]:
+  -> file {['/etc/nectar-freshdesk',
+            '/opt/nectar-freshdesk' ]:
     ensure => directory,
     owner  => $user,
   }
   -> python::virtualenv { $venv_dir:
     ensure     => present,
     version    => '3',
-    systempkgs => false,
+    systempkgs => true,
     distribute => false,
     owner      => $user,
   }
@@ -284,6 +289,7 @@ class freshdesk (
     source   => 'https://github.com/NeCTAR-RC/nectar-freshdesk.git',
     branch   => 'master',
     user     => $user,
+    require  => Package['git'],
   }
   -> python::pip { 'nectar-freshdesk':
     pkgname    => 'nectar-freshdesk',
@@ -292,6 +298,7 @@ class freshdesk (
     editable   => true,
     owner      => $user,
     tag        => ['nectar', 'freshdesk-package'],
+    require    => Package['python3-flask'],
   }
   -> resources { 'freshdesk_config':
     purge => $purge_config,

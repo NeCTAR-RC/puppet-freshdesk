@@ -125,6 +125,7 @@ class freshdesk::apache (
   $error_log_syslog            = undef,
 ) {
 
+  include ::freshdesk
   include ::freshdesk::deps
 
   include ::apache
@@ -178,5 +179,6 @@ class freshdesk::apache (
     error_log_pipe              => $error_log_pipe,
     error_log_syslog            => $error_log_syslog,
     options                     => ['-Indexes', '+FollowSymLinks','+MultiViews'],
+    require                     => Python::Pip['nectar-freshdesk'],
   }
 }
