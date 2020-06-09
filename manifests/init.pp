@@ -7,15 +7,18 @@
 # [*freshdesk_api_key*]
 #   (required) The API key used for interacting with the Freshdesk API
 #
+# [*freshdesk_sso_secret*]
+#   (optional) The Freshdesk SSO secret for Simple SSO
+#
+# [*freshdesk_sso_private_key*]
+#   (optional) The Freshdesk SSO private key for JWT auth
+#
 # [*freshdesk_domain*]
 #   (optional) The Freshdesk domain to work with
 #   Defaults to dhdnectar.freshdesk.com
 #
 # [*freshdesk_sso_url*]
 #   (required) The SSO URL for the Freshdesk domain
-#
-# [*freshdesk_sso_key*]
-#   (required) The Freshdesk SSO secret key
 #
 # [*auth_service_url*]
 #   (required) The URL endpoint of this service, with the method.
@@ -35,10 +38,10 @@
 #   Defaults to 'present'
 #
 # [*default_transport_url*]
-#    (optional) A URL representing the messaging driver to use and its full
-#    configuration. Transport URLs take the form:
-#      transport://user:pass@host1:port[,hostN:portN]/virtual_host
-#    Defaults to $::os_service_default
+#  (optional) A URL representing the messaging driver to use and its full
+#  configuration. Transport URLs take the form:
+#    transport://user:pass@host1:port[,hostN:portN]/virtual_host
+#  Defaults to $::os_service_default
 #
 # [*rpc_response_timeout*]
 #  (Optional) Seconds to wait for a response from a call.
@@ -199,10 +202,11 @@
 class freshdesk (
   $freshdesk_api_key,
   $freshdesk_sso_url,
-  $freshdesk_sso_key,
   $auth_service_url,
   $auth_login_url,
   $auth_secret,
+  $freshdesk_sso_secret               = undef,
+  $freshdesk_sso_private_key          = undef,
   $freshdesk_domain                   = 'dhdnectar.freshdesk.com',
   $user                               = 'freshdesk',
   $group                              = 'freshdesk',
@@ -302,6 +306,21 @@ class freshdesk (
   }
   -> resources { 'freshdesk_config':
     purge => $purge_config,
+  }
+
+  # Set private key if given for JWT auth or use the Simple SSO secret
+  if $freshdesk_sso_private_key {
+    $freshdesk_sso_key = '/etc/nectar-freshdesk/private_key.pem'
+    file { $freshdesk_sso_key:
+      ensure  => present,
+      owner   => 'root',
+      group   => $group,
+      mode    => '0440',
+      content => $freshdesk_sso_private_key,
+      require => File['/etc/nectar-freshdesk']
+    }
+  } else {
+    $freshdesk_sso_key = $freshdesk_sso_secret
   }
 
   oslo::messaging::rabbit { 'freshdesk_config':
