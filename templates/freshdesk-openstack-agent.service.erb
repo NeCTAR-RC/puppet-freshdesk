@@ -3,7 +3,7 @@ Description=freshdesk-openstack-agent
 After=ntp.service
 
 [Service]
-<% if @rfc1918_gateway == 'true' and @http_proxy -%>
+<% if @rfc1918_gateway == true and @http_proxy -%>
 Environment="HTTP_PROXY=<%= @http_proxy %>" "HTTPS_PROXY=<%= @http_proxy %>" "NO_PROXY=localhost,127.0.0.1,172.16.0.0/12,115.146.80/20,.test.rc.nectar.org.au,.dev.rc.nectar.org.au,.rc.nectar.org.au"
 <% end -%>
 User=<%= @user %>
