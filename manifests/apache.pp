@@ -21,6 +21,10 @@
 #   (Optional) The servername for the virtualhost.
 #   Defaults to $::fqdn
 #
+# [*serveraliases*]
+#   (Optional) Any server aliases
+#   Defaults to []
+#
 # [*port*]
 #   (Optional) The port.
 #   Defaults to 80
@@ -90,6 +94,7 @@
 #
 class freshdesk::apache (
   $servername                  = $::fqdn,
+  $serveraliases               = [],
   $bind_host                   = '*',
   $port                        = 80,
   $path                        = '/',
@@ -142,6 +147,7 @@ class freshdesk::apache (
   ::apache::vhost { 'freshdesk':
     ensure                      => 'present',
     servername                  => $servername,
+    serveraliases               => $serveraliases,
     ip                          => $bind_host,
     port                        => $port,
     docroot                     => $wsgi_script_dir,
