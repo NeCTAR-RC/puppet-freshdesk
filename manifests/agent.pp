@@ -36,7 +36,6 @@ class freshdesk::agent (
     ensure  => present,
     content => template('freshdesk/freshdesk-openstack-agent.service.erb'),
     require => Python::Pip['nectar-freshdesk'],
-    notify  => Exec['systemctl-daemon-reload']
   }
 
   service { 'freshdesk-openstack-agent':
