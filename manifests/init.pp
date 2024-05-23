@@ -155,10 +155,6 @@
 #   (Optional) Password for decrypting ssl_key_file (if encrypted)
 #   Defaults to $::os_service_default.
 #
-# [*amqp_allow_insecure_clients*]
-#   (Optional) Accept clients using either SSL or plain TCP
-#   Defaults to $::os_service_default.
-#
 # [*amqp_sasl_mechanisms*]
 #   (Optional) Space separated list of acceptable SASL mechanisms
 #   Defaults to $::os_service_default.
@@ -240,7 +236,6 @@ class freshdesk (
   $amqp_ssl_cert_file                 = $::os_service_default,
   $amqp_ssl_key_file                  = $::os_service_default,
   $amqp_ssl_key_password              = $::os_service_default,
-  $amqp_allow_insecure_clients        = $::os_service_default,
   $amqp_sasl_mechanisms               = $::os_service_default,
   $amqp_sasl_config_dir               = $::os_service_default,
   $amqp_sasl_config_name              = $::os_service_default,
@@ -349,7 +344,6 @@ class freshdesk (
     ssl_cert_file          => $amqp_ssl_cert_file,
     ssl_key_file           => $amqp_ssl_key_file,
     ssl_key_password       => $amqp_ssl_key_password,
-    allow_insecure_clients => $amqp_allow_insecure_clients,
     sasl_mechanisms        => $amqp_sasl_mechanisms,
     sasl_config_dir        => $amqp_sasl_config_dir,
     sasl_config_name       => $amqp_sasl_config_name,
