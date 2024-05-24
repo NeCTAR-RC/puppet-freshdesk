@@ -93,7 +93,7 @@
 #   class { 'freshdesk::apache': }
 #
 class freshdesk::apache (
-  $servername                  = $::fqdn,
+  $servername                  = $facts['networking']['fqdn'],
   $serveraliases               = [],
   $bind_host                   = '*',
   $port                        = 80,
@@ -109,7 +109,7 @@ class freshdesk::apache (
   $ssl_certs_dir               = undef,
   $user                        = $::freshdesk::user,
   $group                       = $::freshdesk::group,
-  $workers                     = $::os_workers,
+  $workers                     = $facts['os_workers'],
   $venv_dir                    = $::freshdesk::venv_dir,
   $wsgi_daemon_process         = 'freshdesk',
   $wsgi_process_display_name   = 'freshdesk',

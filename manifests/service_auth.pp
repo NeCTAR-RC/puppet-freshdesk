@@ -41,15 +41,15 @@
 #
 
 class freshdesk::service_auth (
-  $auth_url                      = $::os_service_default,
-  $username                      = $::os_service_default,
-  $project_name                  = $::os_service_default,
-  $password                      = $::os_service_default,
-  $user_domain_name              = $::os_service_default,
-  $project_domain_name           = $::os_service_default,
-  $auth_type                     = $::os_service_default,
-  $application_credential_id     = $::os_service_default,
-  $application_credential_secret = $::os_service_default,
+  $auth_url                      = $facts['os_service_default'],
+  $username                      = $facts['os_service_default'],
+  $project_name                  = $facts['os_service_default'],
+  $password                      = $facts['os_service_default'],
+  $user_domain_name              = $facts['os_service_default'],
+  $project_domain_name           = $facts['os_service_default'],
+  $auth_type                     = $facts['os_service_default'],
+  $application_credential_id     = $facts['os_service_default'],
+  $application_credential_secret = $facts['os_service_default'],
 ) {
 
   include ::freshdesk::deps
